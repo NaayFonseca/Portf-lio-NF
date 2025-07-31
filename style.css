@@ -22,26 +22,33 @@ html {
 body {
     background-color: var(--escuro);
     color: var(--claro);
+    background-image: url(bg-desktop.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+
 .navbar-custom {
-    background-color: rgba(15, 23, 42, 0.8);
+    
     z-index: 100;
-    padding: 0, 9rem;
+    padding: 0, 10rem;
+    
+    
 }
 
 
 .nav-link {
-    color: var(--claro);
-    font-weight: 500;
+    color: rgb(145, 6, 103);
+    font-weight: 1000;
     position: relative;
-    padding: 0.5rem;
+    padding: 1.5rem;
+    font-size: 25px;
 }
 
 .nav-link::after {
     content: '';
-    height: 2px;
-    width: 0;
+    height: 4px;
+    width: 1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -50,7 +57,7 @@ body {
 }
 
 .nav-link:hover::after {
-    width: 100%;
+    width: 200%;
 }
 
 
@@ -63,23 +70,27 @@ body {
 }
 
 .foto-perfil {
-    width: 200px;
-    height: 300px auto;
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
-    border-radius: 50%;
-    border: 4px solid var(--vidro);
+  width: 350px; /* Aumenta o tamanho */
+  height: 350px; /* Mantém a proporção 1:1 para ficar redonda */
+  object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.3);
+  border-radius: 50%; /* Deixa totalmente redonda */
+  border: 2px solid var(--vidro);
+    
+    
 }
 
 h1{
-    font-size: 3,5rem;
-    color: var(--primaria) ;
+    font-size: 6rem;
+    color: rgb(4, 2, 3);
     font-weight: bold;
-    margin: 20px;
+    margin: 30px;
+    text-align: center;
 }
 
 .cabecalho-sub-titulo{
-    font-size: 1rem;
-    color: var(--claro);
+    font-size: 2rem;
+    color: black;
 
 }
 
@@ -139,7 +150,7 @@ text-align: center;
 font-size: 2.5rem;
 }
 
-card:hover{
+.card:hover{
     box-shadow: 0 10px 20px rgba(7, 70, 229, 0.2);
     transform: translateY(-10px) scale(1.03);
 }
@@ -211,4 +222,13 @@ margin-bottom: 1.5rem;
     background: 
     radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
     radial-gradient(circle at 90% 80%, var(--primaria) 0%, transparent 20%),
+}
+
+
+img{
+ width: 65px;
+height: 200px auto;
+padding: 1px;
+margin-top: 10px;
+margin-left: 50px;
 }
