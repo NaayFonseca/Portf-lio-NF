@@ -11,10 +11,12 @@
 </head>
 
 <body>
+
+    <div class="particulas"></div>
  
 <img src="/image.png" alt="">
 
-    <div class="particulas"></div>
+    
 
     <nav class=" navbar-expand-lg navbar-custom  fixed-top ">
        
@@ -43,64 +45,28 @@
     <section id="Sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim </h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">sou estudante de Análise e Desenvolvimento de Sistemas e apaixonada por tecnologia, criatividade e soluções que realmente fazem a diferença. Estou em constante evolução, aprendendo e explorando áreas como desenvolvimento web, lógica de programação, front-end e banco de dados.
+            <p class="sobre-paragrafo">Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonada por tecnologia, criatividade e soluções que realmente fazem a diferença. Estou em constante evolução, aprendendo e explorando áreas como desenvolvimento web, lógica de programação, front-end e banco de dados.
 
 Gosto de unir código com propósito, seja criando interfaces intuitivas, automatizando processos ou simplesmente deixando a experiência do usuário mais fluida.
 Atualmente, estou focada em desenvolver projetos práticos para ampliar meu portfólio e consolidar meus conhecimentos.
             </p>
         </div>
     </section>
-
-    <section id="Projetos" class="projetos">
-        <h2 class="projetos-titulo"> Meus Projetos</h2>
-        <div class="Projetos-caixa">
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/WhatsApp Image 2025-07-27 at 14.48.06.jpeg" class="card-img-top" alt="projeto-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Cafeteria</h5>
-                            <p class="card-text">Interface desenvolvida para uma cafeteria moderna, com foco em
-          usabilidade, visual atrativo e navegação intuitiva
-                                
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-200">
-                        <img src="/WhatsApp Image 2025-07-27 at 15.07.11.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Interface Instagram</h5>
-                            <p class="card-text">Clonagem da interface do Instagram focada em front-end responsivo,
-            utilizando HTML, CSS e JavaScript para simular feed, stories e
-            layout interativo.
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="/WhatsApp Image 2025-07-27 at 14.57.07.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Imobiliária</h5>
-                            <p class="card-text"> Desenvolvimento de interface para imobiliária, com foco em
-            exibição clara de imóveis, navegação fluida e design responsivo.
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="projetos">
+  <h2 class="projetos-titulo">Meus Projetos</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4 lista-de-projetos">
+    <!-- os cards vão entrar aqui -->
+  </div>
+</section>
 
     <section id="Contato" class="Contato">
         <h2 class="contatos-titulo">Entre em Contato</h2>
         <form class="formulario-contato" id="formulario">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem" id=""></textarea>
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
             </div>
          <button type="submit" class="botao-form" > Enviar WhatsApp</button>
         </form>

@@ -76,6 +76,7 @@ body {
   box-shadow: 0 0 30px rgba(79, 70, 229, 0.3);
   border-radius: 50%; /* Deixa totalmente redonda */
   border: 2px solid var(--vidro);
+  animation: flutuar 5s ease-in-out infinite;
     
     
 }
@@ -221,7 +222,8 @@ margin-bottom: 1.5rem;
     opacity: 0.5;
     background: 
     radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, var(--primaria) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
+    var(--maisEscuro)
 }
 
 
@@ -231,4 +233,31 @@ height: 200px auto;
 padding: 1px;
 margin-top: 10px;
 margin-left: 50px;
+}
+
+section{
+  
+    min-height: 100vh;
+}
+
+.projetos{
+    opacity: 0;
+    filter: blur(20px);
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+}
+
+
+@keyframes flutuar{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
