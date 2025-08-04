@@ -13,13 +13,13 @@ function getApiGitHub() {
       let data = await res.json();
 
       // Pega só os 3 primeiros repositórios
-      data.slice(0, 3).map(item => {
+      data.slice(0, 6).map(item => {
         let project = document.createElement('div');
         project.classList.add('col');
 
         project.innerHTML = `
           <div class="card h-100">
-            <img src="/WhatsApp Image 2025-07-27 at 14.48.06.jpeg" class="card-img-top" alt="${item.name}" style="object-fit: cover; height: 280px; width: 100%;">
+            <img src="/ChatGPT Image 4 de ago. de 2025, 19_22_08.png" class="card-img-top" alt="${item.name}" style="object-fit: cover; height: 220px; width: 80%;">
             <div class="card-body">
               <h5 class="card-title">${item.name}</h5>
               <p class="card-text">${item.description || "Projeto sem descrição"}</p>
@@ -27,8 +27,6 @@ function getApiGitHub() {
             </div>
           </div>
         `;
-
-        
 
         respositories.appendChild(project);
       });

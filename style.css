@@ -38,7 +38,7 @@ body {
 
 
 .nav-link {
-    color: rgb(145, 6, 103);
+    color: rgb(99, 4, 70);
     font-weight: 1000;
     position: relative;
     padding: 1.5rem;
@@ -148,7 +148,8 @@ overflow: hidden ;
 
 .projetos-titulo{
 text-align: center;
-font-size: 2.5rem;
+font-size: 3.5rem;
+
 }
 
 .card:hover{
@@ -228,7 +229,7 @@ margin-bottom: 1.5rem;
 
 
 img{
- width: 65px;
+width: 65px;
 height: 200px auto;
 padding: 1px;
 margin-top: 10px;
@@ -260,4 +261,12 @@ section{
     50% {
         transform: translateY(-20px);
     }
+}
+
+
+footer{
+ text-align: center;
+ background-color: #1d061c;
+ padding: 30px;
+ font-size: 25px;
 }
